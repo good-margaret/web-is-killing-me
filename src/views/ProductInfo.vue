@@ -22,14 +22,17 @@ axios.get('products/' + id)
         <div class="cool-name">{{ product.name }}</div>
 
         <div>
-          This is a photo of a beautiful flower
-          bouquet arranged with soft yellow roses,
-          creamy white hydrangeas, light pink lisianthus,
-          and sprigs of greenery. The bouquet is wrapped in
-          elegant white and green paper with decorative accents,
-          giving it a fresh and sophisticated appearance. It is
-          displayed in a clear glass vase, highlighting the
-          delicate and harmonious composition of the flowers.
+          {{ product.info }}
+
+
+<!--          This is a photo of a beautiful flower-->
+<!--          bouquet arranged with soft yellow roses,-->
+<!--          creamy white hydrangeas, light pink lisianthus,-->
+<!--          and sprigs of greenery. The bouquet is wrapped in-->
+<!--          elegant white and green paper with decorative accents,-->
+<!--          giving it a fresh and sophisticated appearance. It is-->
+<!--          displayed in a clear glass vase, highlighting the-->
+<!--          delicate and harmonious composition of the flowers.-->
         </div>
 
 

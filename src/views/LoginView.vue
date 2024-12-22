@@ -22,6 +22,11 @@ const singIn = (event) => {
 
   event.preventDefault()
 }
+
+const remember = () => {
+  alert('Cannot help! Try remembering ...')
+  // send request to API
+}
 </script>
 
 <template>
@@ -33,16 +38,16 @@ const singIn = (event) => {
         <input name="login" type="text" placeholder="Login" v-model="login">
         <div class="error">{{ loginError }}</div>
       </div>
-      <div class="form-item has-error">
+      <div class="form-item">
         <input name="password" type="password" placeholder="Password" v-model="password">
         <div class="error">{{ passwordError }}</div>
       </div>
       <br/>
       <div class="form-item">
-        <button class="btn-login yellow">log in</button>
+        <button class="btn-login yellow">Log in</button>
       </div>
       <div class="form-item">
-        <button class="btn-login green">Fogot your passward?</button>
+        <button class="btn-login green" @click = "remember">Forgot your password?</button>
       </div>
     </form>
   </section>

@@ -13,28 +13,28 @@ axios.get('products')
   <div class="catalog-container">
     <section class="catalog-filter">
       <div class="filter-container">
-        <div><b>Производитель</b></div>
+        <div class="name-filter">Bouquet size</div>
         <ul>
-          <li><label><input type="checkbox"> Samsung</label></li>
-          <li><label><input type="checkbox"> Xiaomi</label></li>
-          <li><label><input type="checkbox"> Apple</label></li>
+          <li><label><input type="checkbox"> Large</label></li>
+          <li><label><input type="checkbox"> Medium</label></li>
+          <li><label><input type="checkbox"> Small</label></li>
         </ul>
       </div>
       <div class="filter-container">
-        <div><b>Цвет</b></div>
+        <div class="name-filter">Flowers</div>
         <ul>
-          <li><label><input type="checkbox"> Белый</label></li>
-          <li><label><input type="checkbox"> Синий</label></li>
-          <li><label><input type="checkbox"> Красный</label></li>
-          <li><label><input type="checkbox"> Жёлтый</label></li>
+          <li><label><input type="checkbox"> Roses</label></li>
+          <li><label><input type="checkbox"> Lilies</label></li>
+          <li><label><input type="checkbox"> Chrysanthemums</label></li>
+          <li><label><input type="checkbox"> Other type</label></li>
         </ul>
       </div>
       <div class="filter-container">
-        <div><b>Стиль</b></div>
+        <div class="name-filter">Bouquet wrapper</div>
         <ul>
-          <li><label><input type="checkbox"> Лофт</label></li>
-          <li><label><input type="checkbox"> Современный</label></li>
-          <li><label><input type="checkbox"> Классический</label></li>
+          <li><label><input type="checkbox"> Wrapping paper</label></li>
+          <li><label><input type="checkbox"> Mesh</label></li>
+          <li><label><input type="checkbox"> Wrapping film</label></li>
         </ul>
       </div>
     </section>
@@ -56,6 +56,17 @@ axios.get('products')
     min-width: 200px;
     background-color: #fff;
     padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+  }
+
+  .catalog-container .catalog-filter .name-filter {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .catalog-container .list-products {
