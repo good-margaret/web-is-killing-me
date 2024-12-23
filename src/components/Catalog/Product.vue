@@ -12,18 +12,29 @@ const buy = () => {
 <template>
   <div class="product-item">
     <div class="img-container">
-      <img src="@/assets/img/bouquet-1.jpg">
+<!--      <router-link :to="{name: 'product-info', params: {id: product.id}}">-->
+        <img :src="product.picture">
+<!--      </router-link>-->
     </div>
-    <h3>
+    <div class="fancy-text">
       <router-link :to="{name: 'product-info', params: {id: product.id}}">{{ product.name }}</router-link>
-    </h3>
+    </div>
     <div class="row vertical-center between">
-      <div>
+      <div class="row vertical-center between">
         <button class="btn-cart" @click="buy">
           Buy Now
         </button>
+        <button class="btn-like">
+          <img src="@/assets/img/icon-heart.png">
+        </button>
+        <button class="btn-like">
+          <img src="@/assets/img/cart-bag.png">
+        </button>
       </div>
-      <div class="price">{{ product.price}} ₽</div>
+      <div class="price">
+        <div class="ex-price" v-show="product.isSale"> {{product.exprice}} ₽</div>
+        {{ product.price}} ₽
+      </div>
     </div>
     <div class="hover-block"></div>
     <div class="sale" v-show="product.isSale">

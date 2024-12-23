@@ -3,11 +3,81 @@ import Product from "@/components/Catalog/Product.vue";
 import {ref} from "vue";
 import axios from "axios";
 
-const products = ref([])
-axios.get('products')
-    .then((response) => products.value = response.data)
+//const products = ref([])
+//axios.get('products')
+//    .then((response) => products.value = response.data)
+
+const products = [
+  {
+    id: 1,
+    name: 'Wonderful wishes',
+    picture: 'https://gryazi.flowlove.ru/wp-content/themes/init/catalog/images/products/buket-dolina-czvetov-large.webp',
+    exprice: 5000,
+    price: 2436,
+    isSale: true,
+    info: 'This is a photo of a beautiful flower\
+    bouquet arranged with soft yellow roses,\
+    creamy white hydrangeas, light pink lisianthus,\
+    and sprigs of greenery. The bouquet is wrapped in\
+    elegant white and green paper with decorative accents,\
+    giving it a fresh and sophisticated appearance. It is\
+    displayed in a clear glass vase, highlighting the\
+    delicate and harmonious composition of the flowers.',
+
+  },
+  {id: 2,
+    name: 'Romantic moment',
+    picture:'https://gryazi.flowlove.ru/wp-content/themes/init/catalog/images/products/buket-aromatnoe-oblako-0-large.webp',
+    exprice: 5500,
+    price: 3860,
+    isSale: true,
+    info: 'This is a photo of a beautiful flower\
+    bouquet arranged with soft yellow roses,\
+    creamy white hydrangeas, light pink lisianthus,\
+    and sprigs of greenery. The bouquet is wrapped in\
+    elegant white and green paper with decorative accents,\
+    giving it a fresh and sophisticated appearance. It is\
+    displayed in a clear glass vase, highlighting the\
+    delicate and harmonious composition of the flowers.',
+  },
+
+  {
+    id: 3,
+    name: 'Wonderful wishes',
+    picture: 'https://gryazi.flowlove.ru/wp-content/themes/init/catalog/images/products/buket-dolina-czvetov-large.webp',
+    exprice: 5000,
+    price: 2436,
+    isSale: true,
+    info: 'This is a photo of a beautiful flower\
+    bouquet arranged with soft yellow roses,\
+    creamy white hydrangeas, light pink lisianthus,\
+    and sprigs of greenery. The bouquet is wrapped in\
+    elegant white and green paper with decorative accents,\
+    giving it a fresh and sophisticated appearance. It is\
+    displayed in a clear glass vase, highlighting the\
+    delicate and harmonious composition of the flowers.',
+
+  },
+  {id: 4,
+    name: 'Romantic moment',
+    picture:'https://gryazi.flowlove.ru/wp-content/themes/init/catalog/images/products/buket-aromatnoe-oblako-0-large.webp',
+    exprice: 5500,
+    price: 3860,
+    isSale: true,
+    info: 'This is a photo of a beautiful flower\
+    bouquet arranged with soft yellow roses,\
+    creamy white hydrangeas, light pink lisianthus,\
+    and sprigs of greenery. The bouquet is wrapped in\
+    elegant white and green paper with decorative accents,\
+    giving it a fresh and sophisticated appearance. It is\
+    displayed in a clear glass vase, highlighting the\
+    delicate and harmonious composition of the flowers.',
+
+  },
+]
 
 </script>
+
 
 <template>
   <div class="catalog-container">
